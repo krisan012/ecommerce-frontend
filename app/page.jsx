@@ -11,6 +11,7 @@ import FinasterideSection from "@/app/components/Home/FinasterideSection";
 import SimpleAffordableSection from "@/app/components/Home/SimpleAffordableSection";
 import HowItWorksSection from "@/app/components/Home/HowItWorksSection";
 import TreatmentSection from "@/app/components/Home/TreatmentSection";
+import ProductCarousel from "@/app/components/Home/ProductCarousel";
 import Footer from "@/app/components/Home/Footer";
 
 export default function Home() {
@@ -25,43 +26,17 @@ export default function Home() {
 						Your #1 Portal for Men’s Prescription Medication
 					</p>
 					<Link href="/"
-						  className="mt-8 inline-block bg-red-600 text-white text-lg font-semibold py-3 px-8 rounded-md shadow-md hover:bg-red-700">
+						  className="mt-8 inline-block bg-red-600 text-white text-lg font-semibold py-3 px-8 rounded-3xl shadow-md hover:bg-red-700">
 						FIND MY TREATMENT
 					</Link>
-					<div className="mt-16 flex justify-center space-x-8">
-						<div className="flex flex-col items-center">
-							<Image
-								src="/products/product1.png" // Replace with your image paths
-								alt="Extreme RX"
-								width={150}
-								height={200}
-								className="object-contain"
-							/>
-							<p className="mt-4 text-gray-700 font-semibold">EXTREME RX</p>
-						</div>
-						<div className="flex flex-col items-center">
-							<Image
-								src="/products/product2.png" // Replace with your image paths
-								alt="Shred Protocol"
-								width={200}
-								height={250}
-								className="object-contain"
-							/>
-							<p className="mt-4 text-gray-700 font-semibold">SHRED PROTOCOL</p>
-						</div>
-						<div className="flex flex-col items-center">
-							<Image
-								src="/products/product3.png" // Replace with your image paths
-								alt="Testosterone"
-								width={150}
-								height={200}
-								className="object-contain"
-							/>
-							<p className="mt-4 text-gray-700 font-semibold">TESTOSTERONE</p>
-						</div>
+
+					<div className="bg-cover bg-center" style={{ backgroundImage: 'url(/images/circle.png)', backgroundSize: "35%", backgroundRepeat: 'no-repeat' }}>
+						<ProductCarousel />
 					</div>
+
 				</div>
 			</div>
+
 
 			<div className="bg-gradient-to-b from-white to-gray-100 py-16">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center font-bold">

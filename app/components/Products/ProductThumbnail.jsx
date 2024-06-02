@@ -94,8 +94,9 @@ export default function ProductPage({productId}) {
                                 </li>
                                 <li><span className="mx-2">/</span></li>
                                 <li>
-                                    <a href={`/products/${productId}`} className="text-blue-600 hover:text-blue-800">Generic
-                                        Viagra</a>
+                                    <a href={`/products/${productId}`} className="text-blue-600 hover:text-blue-800">
+                                        Generic Viagra
+                                    </a>
                                 </li>
                             </ol>
                         </nav>

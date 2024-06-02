@@ -3,11 +3,14 @@ import Image from 'next/image';
 
 const Carousel = () => {
     const settings = {
-        dots: true,
+        dots: false,
+        centerMode:true,
+        centerPadding: "0",
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        rtl: false,
         responsive: [
             {
                 breakpoint: 1024,
